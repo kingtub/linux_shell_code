@@ -1,0 +1,12 @@
+#! /bin/bash
+
+v=Sunday
+
+# 双引号会对其中的“$”字符进行解析
+echo "Today is $v"
+
+# 单引号不会对特殊字符进行解析
+echo 'Today is $v'
+
+# 倒引号(Esc键下方)会运行其中的命令，并把命令的输出结果做为表达式的输入
+echo "It is `date` now"

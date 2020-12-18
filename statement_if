@@ -1,0 +1,10 @@
+#! /bin/bash
+
+echo "Enter password:"
+# 读取输入，存在变量pwd
+read pwd
+
+if [ $pwd = "lizhang" ]
+then 
+    echo "Welcome!"
+fi

@@ -1,0 +1,15 @@
+#! /bin/bash
+
+# 本文件说明，test和[命令的文件测试
+
+if [ -x ./quote ] ## 若文件quote可执行，执行它；否则，给它加执行权限再执行
+then 
+    echo "It is executable, run it"
+    ./quote
+else 
+    echo "Not executable, chmod and run"
+    chmod +x ./quote
+    ./quote
+fi
+
+

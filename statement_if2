@@ -1,0 +1,17 @@
+#! /bin/bash
+
+echo "Enter your first name:"
+# 读取输入，存在变量fn
+read fn
+
+if [ $fn = "li" ]
+then 
+    echo "Welcome Mr Li"
+    
+elif [ $fn = "wang" ]
+then 
+    echo "Welcome Mr Wang"
+    
+else
+    echo "Sorry, you are not welcome"
+fi

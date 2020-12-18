@@ -1,0 +1,16 @@
+#! /bin/bash
+
+# 本文件说明，test和[命令的字符串比较。test和[是同义词。
+read passwd
+
+if [ -z "$passwd" ] ## 若passwd为空，就提示用户
+then 
+    echo "Please input pwd"
+fi
+
+if [ "ABC" = "abc" ]
+then 
+    echo "ABC = abc"
+else 
+    echo "ABC != abc"
+fi

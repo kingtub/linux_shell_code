@@ -1,0 +1,9 @@
+#！ /bin/bash
+
+#将一个字符串赋给变量
+log="monday"
+
+echo "The value of log is:"
+
+# 美元符号（$）用于变量替换
+echo $log

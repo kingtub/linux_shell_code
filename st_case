@@ -1,0 +1,24 @@
+#! /bin/bash
+
+echo "Input name:"
+read name
+
+case $name in 
+    deng)
+    echo "Hello deng"
+    ;;
+    
+    chen)
+    echo "Hello chen"
+    ;;
+    
+    huang)
+    echo "Hello huang"
+    ;;
+    
+    *)
+    echo "You should enter deng/chen/huang"
+    ;;
+    
+esac
+

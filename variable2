@@ -1,0 +1,20 @@
+#! /bin/bash
+
+# $# 代表输入参数个数
+echo "您输入了$#个参数"
+
+# 输出第0个参数的值，即脚本名字
+echo "\$0 = $0"
+# 输出第1个参数的值，下同
+echo "\$1 = $1"
+echo "\$2 = $2"
+echo "\$3 = $3"
+
+echo
+echo "again"
+for v in $@
+do
+   echo $v
+done
+
+

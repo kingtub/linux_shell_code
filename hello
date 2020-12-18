@@ -1,0 +1,9 @@
+#! /bin/bash  
+# 上面一行告诉Shell，运行这个脚本时应该使用哪个Shell程序。
+# 一般来说，Shell程序的第一行总是以“#！”开头，指定脚本的运行环境。尽管在当前环境就是BASH SHELL时可以省略这一行，
+# 但这并不是一个好习惯。
+
+
+# Display a line
+echo "Hello, World"
+echo "I am kingtub"
