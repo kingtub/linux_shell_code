@@ -18,3 +18,12 @@ do
 done
 
 
+echo
+echo "again"
+for v in $*
+do
+   echo $v
+done
+
+
+

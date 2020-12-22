@@ -1,7 +1,15 @@
 #! /bin/bash
 
+# 这篇讲运算符和表达式求值
+# 用于表达式求值起码有几种方式：$[] 、 expr命令、let命令
 i=$[3+5]
 j=15
 n=$[$i * $j]
-
 echo $n
+
+echo "expr 命令："
+expr $i + $j
+
+echo "let 命令："
+let u=$i+$j
+echo $u

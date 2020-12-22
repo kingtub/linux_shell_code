@@ -1,0 +1,8 @@
+#! /bin/bash
+
+
+# 可以给read命令提供多个变量名作为参数。在这种情况下，read命令会将接收到的行“拆开”分别赋予这些变量。
+# 默认情况下，Bash只以空格、制表符和换行符来分隔。
+read first second
+
+echo "you input: $first and $second"

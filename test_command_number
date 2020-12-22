@@ -1,0 +1,8 @@
+#!  /bin/bash
+
+if [ $# -lt 2 ]
+then 
+   echo "You entered params lower than 2"
+else
+   echo "Good you entered at least 2 params"
+fi

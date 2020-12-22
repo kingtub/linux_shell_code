@@ -1,0 +1,17 @@
+#! /bin/bash
+
+if [ -d $1 ]
+then 
+    echo "$1 is a dir"
+elif [ -f $1 ]
+then 
+    echo "$1 is a ordinary file"
+elif [ -x $1 ] 
+then 
+    echo "file $1 is executable"
+elif [ -w $1 ]
+then 
+    echo "file $1 is writable"
+
+fi
+    

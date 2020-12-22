@@ -1,0 +1,10 @@
+#! /bin/bash
+
+# 下面这段脚本在用户退出脚本的时候显示“Goodbye！”
+
+trap 'echo "Goodbye"; exit'  EXIT
+echo "Type 'quit' to exit"
+while [ "$tex" != "quit" ]
+do
+    read tex
+done

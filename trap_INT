@@ -1,0 +1,9 @@
+#! /bin/bash
+
+# 下面这个脚本忽略INT信号，并显示一条信息提示
+# 用户应该怎样退出这个程序（INT信号当用户在Shell中按Ctrl+C快捷键时被发送）。
+trap 'echo "Type quit to exit"' INT
+while [ "$input" != 'quit' ]
+do
+    read input
+done
