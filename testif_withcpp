@@ -1,0 +1,17 @@
+#! /bin/bash
+
+#return_c is executable file of return.cpp
+if ./return_c -1
+then 
+    echo "return_c exit -1"
+fi
+
+if ./return_c 0
+then 
+    echo "return_c exit 0"
+fi
+
+if ./return_c 1
+then 
+    echo "return_c exit 1"
+fi

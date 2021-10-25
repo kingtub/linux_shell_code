@@ -1,0 +1,25 @@
+#! /bin/bash
+
+if [ -f return.cpp ]
+then 
+	echo "return.cpp is a file"
+fi
+
+if [ -f "return.cpp" ]
+then 
+	echo "\"return.cpp\" is a file"
+fi
+
+if [ -x return.cpp ]
+then
+	echo "return.cpp is executable"
+else
+	echo "return.cpp is not executable"
+fi
+
+if [ -w return.cpp ]
+then
+	echo "return.cpp is writable"
+else
+	echo "return.cpp is not writable"
+fi

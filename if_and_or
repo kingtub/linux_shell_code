@@ -1,0 +1,18 @@
+#! /bin/bash
+
+if [ $# -ge 1 -a -f "$1" ]
+then
+	echo "Yeah, you supply a file as input"
+else
+	echo "you must input a file"
+fi
+
+# Shell的条件操作符&&和||可以用来替代test和[命令内建的“-a”和“-o”。
+echo "Again"
+
+if [ $# -ge 1 ] && [ -f "$1" ]
+then
+	echo "Yeah, you supply a file as input"
+else
+	echo "you must input a file"
+fi

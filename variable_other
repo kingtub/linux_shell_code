@@ -1,0 +1,10 @@
+#! /bin/bash  
+
+log="Monday"
+
+#使用转义字符“\”
+echo "The value of \$log is $log"
+
+# Shell提供了花括号“{}”来限定一个变量的开始和结束。在紧跟变量输出字母后缀时，就必须要使用这个功能。
+word="big"
+echo "This apple is ${word}ger"

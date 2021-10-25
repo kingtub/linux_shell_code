@@ -1,0 +1,9 @@
+#! /bin/bash
+
+ls -l
+
+echo "Press <ENTER> to continue"
+#此处暂停
+read
+
+echo "END"

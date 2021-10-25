@@ -1,0 +1,45 @@
+#! /bin/bash
+
+s1=
+s2='avb'
+s3='jkkl'
+
+if test -z $s1 ## 若s1为空，则为真
+then
+   echo "s1 is null string"
+fi
+
+if [ -z $s1 ] ## 若s1为空，则为真
+then
+   echo "s1 is null string"
+fi
+
+if test -n $s2 ## 若s2不为空，则为真
+then
+   echo "s2 is not a null string"
+fi
+
+if [ -n $s2 ] ## 若s2不为空，则为真
+then
+   echo "s2 is not a null string"
+fi
+
+if test $s2 = $s3 ## 若两个字符串相等，则为真
+then 
+    echo "s2 is equal to s3"
+fi
+
+if [ $s2 = $s3 ] ## 若两个字符串相等，则为真
+then 
+    echo "s2 is equal to s3"
+fi
+
+if test $s2 != $s3 ## 若两个字符串不相等，则为真
+then 
+    echo "s2 is not equal to s3"
+fi
+
+if [ $s2 != $s3 ] ## 若两个字符串不相等，则为真
+then 
+    echo "s2 is not equal to s3"
+fi
