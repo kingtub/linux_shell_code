@@ -1,0 +1,5 @@
+#! /bin/bash -e
+
+ls good/ ##因为没有good目录所以出错。因上面加了-e选项，所以脚本不再往下执行
+
+echo "ok，to end"

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# 允许在 read 命令行中直接指定一个提示
+read -p "输入网站名:" file
+echo "你输入的网站名是 $file" 
+exit 0 
